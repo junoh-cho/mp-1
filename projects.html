@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset ="UTF-8">
-    <title>Education | Junoh Cho</title>
-    <link rel="stylesheet" type="text/css" href="education.css">
-</head>
+    <head>
+        <meta charset ="UTF-8">
+        <title>Projects | Junoh Cho</title>
+        <link rel="stylesheet" type="text/css" href="projects.css">
+    </head>
 
-<body>
-<header>
-    <h1>Junoh Cho</h1>
-    <nav>
-        <ul>
-            <li><a id="nav-red" href="index.html">Home</a></li>
-            <li><a id="nav-orange" href="education.html">Education</a></li>
-            <li><a id="nav-yellow" href="work.html">Work experience</a></li>
-            <li><a id="nav-green" href="cert.html">Certifications</a></li>
-            <li><a id="nav-blue" href="projects.html">Projects</a></li>
-            <li><a id="nav-indigo" href="art.html">Art Gallery</a></li>
-        </ul>
-    </nav>
-</header>
+    <body>
+        <header>
+            <h1>Junoh Cho</h1>
+            <nav>
+                <ul>
+                    <li><a id="nav-red" href="index.html">Home</a></li>
+                    <li><a id="nav-orange" href="education.html">Education</a></li>
+                    <li><a id="nav-yellow" href="work.html">Work experience</a></li>
+                    <li><a id="nav-green" href="cert.html">Certifications</a></li>
+                    <li><a id="nav-blue" href="projects.html">Projects</a></li>
+                    <li><a id="nav-indigo" href="art.html">Art Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
 
-<main>
-    <h1>Education</h1>
+        <main>
+            <h1>Projects</h1>
+            <div id = "calculator">
+                <!-- 2 x Inputs -->
+                <input type="text" id="first-number" >
+                <input type="text" id="second-number" >
+                <!-- 6 x Buttons -->
+                <button onclick= "addition()"> + </button>
+                <button onclick="subtract()">-</button>
+                <button onclick="multiply()">*</button>
+                <button onclick="divide()">/</button>
+                <button onclick="exponent()">**</button>
+                <button onclick="clearOutput()">Clear</button>
+                <!-- Output -->
+                <h3 id="output"></h3>
+            </div>
 
+        </main>
 
-</main>
-
-<footer>
-    <p> All rights reserved by Junoh Cho <a href="">Credits</a>&#169;</p>
-</footer>
-</body>
+        <footer>
+            <p> All rights reserved by Junoh Cho <a href="">Credits</a>&#169;</p>
+        </footer>
+        <script src="projects.js"></script>
+    </body>
 </html>
