@@ -7,7 +7,7 @@
     </head>
 
     <body>
-        <header>
+    <header>
             <h1>Junoh Cho</h1>
             <nav>
                 <ul>
@@ -23,20 +23,24 @@
 
         <main>
             <h1>Projects</h1>
-            <div id = "calculator">
+            <h3>JS calculator ft. Raphael from TMNT</h3>
+            <audio controls autoplay src="tmnt.mp3"></audio> <!-- audio from https://www.youtube.com/watch?v=_ebfmG-334M -->
                 <!-- 2 x Inputs -->
-                <label for="first-number"></label><input type="text" id="first-number" >
-                <label for="second-number"></label><input type="text" id="second-number" >
+                <div id = "input">
+                    <label for="first-number"></label><input type="text" id="first-number" >
+                    <label for="second-number"></label><input type="text" id="second-number" >
+                </div>
                 <!-- 6 x Buttons -->
-                <button onclick= "addition()"> + </button>
-                <button onclick="subtract()">-</button>
-                <button onclick="multiply()">*</button>
-                <button onclick="divide()">/</button>
-                <button onclick="exponent()">**</button>
-                <button onclick="clearOutput()">Clear</button>
+                <div id = buttons>
+                    <button onclick= "addition()"> + </button>
+                    <button onclick="subtract()">-</button>
+                    <button onclick="multiply()">*</button>
+                    <button onclick="divide()">/</button>
+                    <button onclick="exponent()">**</button>
+                    <button onclick="clearOutput()">Clear</button>
+                </div>
                 <!-- Output -->
                 <h3 id="output"></h3>
-            </div>
 
         </main>
 

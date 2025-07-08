@@ -25,18 +25,18 @@ nav ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 2%;
+    gap: 5%;
     margin-top: 2%;
 }
 
 nav a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
-
+    font-size: 1.2vw;
 }
 
-/* Nav Hover Effects from stack overflow*/
+
+/* Nav Hover Effects from stack overflow */
 #nav-red:hover {
     color: red;
     font-weight: bold;
@@ -64,63 +64,63 @@ nav a {
 
 main {
     max-width: 80%;
-    margin: 0 auto 80px auto;
-    text-align: left;
-}
-/* EDIT FROM BELOW HERE */
-/* Page Title */
-main h1 {
-    font-size: 2vw;
-    margin-bottom: 1%;
+    margin: 0 auto 8% auto;
     text-align: left;
 }
 
-/* Job Title */
+/* Page Title: EDUCATION */
+main h1 {
+    font-size: 2vw;
+    margin-bottom: 5%;
+}
+
+/* Education Title */
 main h3 {
-    font-size: 20px;
-    margin-top: 40px;
-    margin-bottom: 8px;
+    font-size: 2vw;
+    margin: 1% auto;
     color: white;
 }
 
-/* Job Dates */
+/* education Dates */
 main p {
-    font-size: 16px;
-    font-style: italic;
-    margin-bottom: 20px;
-    margin-left: 5px;
+    font-size: 1.17vw;
+    margin: 1% auto;
 }
 
 /* Bullet List */
 main ul {
-    padding-left: 25px;
-    margin-bottom: 40px;
+    padding-left: 2vw;
+    margin-bottom: 5vw;
     list-style-type: disc;
 }
 
 main li {
-    margin-bottom: 10px;
-    font-size: 15px;
+    margin-bottom: 1vw;
+    font-size: 1.1vw; /* 15px → ~1.1vw */
 }
 
 /* Footer */
 footer {
     text-align: center;
-    font-size: 14px;
-    margin-top: 80px;
-    color: white;
+    font-size: 1vw;
+    margin-top: 5%;
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 1000px) {
+    main, nav {
+        width: 100%;
+    }
+
     nav ul {
+        display: flex;
         flex-direction: column;
         align-items: center;
         padding: 0;
     }
 
     nav a {
-        font-size: 3vw; /* more responsive than fixed px */
+        font-size: 3vw;
     }
 
     main h1 {
@@ -137,11 +137,10 @@ footer {
     }
 
     main li {
-        font-size: 2.6vw;
+        font-size: 2.5vw;
     }
 
     footer {
-        font-size: 2.5vw;
+        font-size: 2.2vw;
     }
 }
-

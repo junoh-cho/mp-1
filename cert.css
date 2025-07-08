@@ -1,10 +1,8 @@
-/* Reset */
 * {
     margin: 0;
     box-sizing: border-box;
 }
 
-/* Body */
 body {
     font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
     background-color: black;
@@ -12,7 +10,6 @@ body {
     padding: 3%;
 }
 
-/* Header */
 header {
     text-align: center;
     margin-bottom: 5%;
@@ -23,23 +20,23 @@ header h1 {
     margin-bottom: 1%;
 }
 
-/* Nav */
 nav ul {
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 2%;
+    gap: 5%;
     margin-top: 2%;
 }
 
 nav a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
-    transition: color 0.2s ease, font-weight 0.2s ease;
+    font-size: 1.2vw;
 }
 
+
+/* Nav Hover Effects from stack overflow */
 #nav-red:hover {
     color: red;
     font-weight: bold;
@@ -68,8 +65,7 @@ nav a {
 /* Main */
 main {
     max-width: 80%;
-    margin: 0 auto 80px auto;
-    text-align: center;
+    margin: 0 auto 8% auto;
 }
 
 main h1 {
@@ -82,35 +78,39 @@ main h1 {
 /* Certificate Images */
 main img {
     display: block;
-    margin: 30px auto;
+    margin: 5% auto;
     max-width: 90%;
     height: auto;
     border: 2px solid white;
-    border-radius: 8px;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    font-size: 14px;
-    margin-top: 80px;
-    color: white;
+    font-size: 1vw;
+    margin-top: 5%;
 }
 
 /* Responsive */
 @media screen and (max-width: 1000px) {
+    main, nav {
+        width: 100%;
+    }
+
     nav ul {
+        display: flex;
         flex-direction: column;
         align-items: center;
         padding: 0;
     }
 
     nav a {
-        font-size: 22px;
+        font-size: 3vw;
     }
 
     main h1 {
-        font-size: 34px;
+        font-size: 5vw;
+        text-align: center;
     }
 
     main img {
@@ -118,6 +118,6 @@ footer {
     }
 
     footer {
-        font-size: 18px;
+        font-size: 2.2vw;
     }
 }

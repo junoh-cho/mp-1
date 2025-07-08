@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    color: white;
+    padding: 3%;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+header h1 {
+    font-size: 2.5vw;
+    margin-bottom: 1%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 2%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2vw;
+}
+
+
+/* Nav Hover Effects from stack overflow */
+#nav-red:hover {
+    color: red;
+    font-weight: bold;
+}
+#nav-orange:hover {
+    color: orange;
+    font-weight: bold;
+}
+#nav-yellow:hover {
+    color: yellow;
+    font-weight: bold;
+}
+#nav-green:hover {
+    color: green;
+    font-weight: bold;
+}
+#nav-blue:hover {
+    color: blue;
+    font-weight: bold;
+}
+#nav-indigo:hover {
+    color: indigo;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    max-width: 80%;
+    margin: 0 auto 8% auto;
+    text-align: left;
+}
+
+/* Page title: PROJECTS*/
+main h1 {
+    font-size: 2vw;
+    margin-bottom: 5%;
+}
+
+/* project title: JS calculator*/
+main h3 {
+    font-size: 2vw;
+    margin: 1% auto;
+    color: white;
+}
+/* Calculator Section */
+#input {
+    margin-top: 3%;
+    padding: 3%;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: red;
+}
+
+/* Inputs */
+#input input[type="text"] {  /* source from https://www.w3schools.com/css/css_form.asp */
+    width: 40%;
+    padding: 2vw;
+    margin: 2% 1%;
+    font-size: 2vw;
+    background-color: white;
+    color: black;
+    border: 1vw solid black;
+}
+
+/* Buttons container */
+#buttons {
+    margin-top: 2%;
+    text-align: center;
+    background-color: green;
+}
+
+/* Buttons */
+#buttons button {
+    padding: 1.2vw 2.5vw;
+    margin: 2% 1%;
+    font-size: 1.1vw;
+    background-color: white;
+    color: black;
+}
+
+#buttons button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Output */
+#output {
+    margin-top: 3%;
+    font-size: 1.5vw;
+    min-height: 3vw;
+    padding-top: 2%;
+}
+
+@media screen and (max-width: 1000px) {
+    main, nav {
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav a {
+        font-size: 3vw;
+    }
+
+    main h1 {
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    main h3 {
+        font-size: 3.5vw;
+    }
+
+    #input {
+        max-width: 95%;
+        padding: 5%;
+        background-color: red;
+    }
+
+    #input input[type="text"] {
+        width: 80%;
+        padding: 3vw;
+        margin: 3% 1%;
+        font-size: 3.5vw;
+        border: 0.5vw solid black;
+        border-radius: 1vw;
+    }
+
+    #buttons {
+        max-width: 95%;
+        padding: 4%;
+        background-color: green; /* keep same bg color */
+        margin-top: 4%;
+    }
+
+    #buttons button {
+        padding: 3vw 5vw;
+        margin: 3% 2%;
+        font-size: 3vw;
+        border-radius: 1vw;
+    }
+
+    #output {
+        font-size: 3.5vw;
+        min-height: 5vw;
+        padding-top: 4%;
+    }
+
+    footer {
+        font-size: 2.5vw;
+        margin-top: 8%;
+    }
+}

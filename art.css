@@ -3,7 +3,6 @@
     box-sizing: border-box;
 }
 
-/* Body */
 body {
     font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
     background-color: black;
@@ -11,7 +10,6 @@ body {
     padding: 3%;
 }
 
-/* Header */
 header {
     text-align: center;
     margin-bottom: 5%;
@@ -35,10 +33,10 @@ nav a {
     text-decoration: none;
     color: white;
     font-size: 1.2vw;
-
 }
 
-/* Nav Hover Effects from stack overflow*/
+
+/* Nav Hover Effects from stack overflow */
 #nav-red:hover {
     color: red;
     font-weight: bold;
@@ -68,27 +66,22 @@ nav a {
 main {
     max-width: 80%;
     margin: 0 auto 8% auto;
-    text-align: center;
 }
 
-/* Profile photo */
-main img {
-    max-width: 20%;
-    margin: 2% auto;
-}
-
-/* Page Title: HOME */
 main h1 {
     font-size: 2vw;
-    margin-left: 8%;
+    margin-bottom: 1%;
+    margin-left: 5%;
     text-align: left;
 }
 
-/* About me */
-main h3 {
-    font-size: 1.2vw;
-    text-align: left;
-    margin-left: 5%;
+/* Certificate Images */
+main img {
+    display: block;
+    margin: 5% auto;
+    max-width: 40%;
+    height: auto;
+    border: 2px solid white;
 }
 
 /* Footer */
@@ -98,16 +91,16 @@ footer {
     margin-top: 5%;
 }
 
+/* Responsive */
 @media screen and (max-width: 1000px) {
     main, nav {
         width: 100%;
     }
 
-    /* Make nav ul vertical instead of horizontal */
     nav ul {
         display: flex;
         flex-direction: column;
-        align-items: center;  /* center nav items horizontally */
+        align-items: center;
         padding: 0;
     }
 
@@ -115,17 +108,13 @@ footer {
         font-size: 3vw;
     }
 
-    main img {
-        max-width: 30%;
-    }
-
     main h1 {
         font-size: 5vw;
         text-align: center;
     }
 
-    main h3 {
-        font-size: 3.5vw;
+    main img {
+        max-width: 100%;
     }
 
     footer {
