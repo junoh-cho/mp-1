@@ -106,13 +106,13 @@ footer {
     /* Make nav ul vertical instead of horizontal */
     nav ul {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;  /* center nav items horizontally */
         padding: 0;
     }
 
     nav a {
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     main img {
